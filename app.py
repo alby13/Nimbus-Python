@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from oauthlib.oauth2 import WebApplicationClient
+from werkzeug.utils import secure_filename
 import os
 from datetime import datetime
 import requests
