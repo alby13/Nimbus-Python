@@ -84,3 +84,9 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS DISPLAYED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Original License: Apache License v2.0
+
+# Nimbus Python
+
+This project is a Python port of the original Nimbus `[Nimbus]([https://github.com/original-author/original-repo](https://github.com/logscore/Nimbus))`).
+
+While the foundational logic is derived from the Apache 2.0 licensed original, this specific Python implementation, including all modifications and new contributions, is subject to a more restrictive license. Please refer to the `LICENSE.txt` file for details on usage restrictions.
