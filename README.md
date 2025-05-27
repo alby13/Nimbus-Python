@@ -87,6 +87,6 @@ Original License: Apache License v2.0
 
 # Nimbus Python
 
-This project is a Python port of the original Nimbus `[Nimbus]([https://github.com/original-author/original-repo](https://github.com/logscore/Nimbus))`).
+This project is a Python port of the original Nimbus (`https://github.com/logscore/Nimbus`).
 
 While the foundational logic is derived from the Apache 2.0 licensed original, this specific Python implementation, including all modifications and new contributions, is subject to a more restrictive license. Please refer to the `LICENSE.txt` file for details on usage restrictions.
