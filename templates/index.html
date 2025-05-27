@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-4xl font-bold mb-8">Welcome to Nimbus Cloud Storage</h1>
+    <p class="text-xl mb-8">A better cloud storage solution</p>
+    <a href="{{ url_for('login') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Login with Google
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-8">Your Files</h1>
+    
+    <div class="mb-8">
+        <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data" class="flex items-center space-x-4">
+            <input type="file" name="file" class="flex-1 p-2 border rounded">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Upload
+            </button>
+        </form>
+    </div>
+
+    <div class="bg-white shadow rounded-lg">
+        <div class="divide-y">
+            {% for file in files %}
+            <div class="p-4 flex items-center justify-between">
+                <div>
+                    <h3 class="font-medium">{{ file.filename }}</h3>
+                    <p class="text-sm text-gray-500">
+                        {{ file.size|filesizeformat }} • 
+                        {{ file.upload_date.strftime('%Y-%m-%d %H:%M') }}
+                    </p>
+                </div>
+                <a href="{{ url_for('download_file', file_id=file.id) }}" 
+                   class="text-blue-500 hover:text-blue-700">
+                    Download
+                </a>
+            </div>
+            {% endfor %}
+            
+            {% if not files %}
+            <div class="p-4 text-center text-gray-500">
+                No files uploaded yet
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
